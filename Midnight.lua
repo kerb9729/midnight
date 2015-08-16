@@ -9,10 +9,12 @@ local function midnight()
     if tzoffset < -12 * 60 * 60 then tzoffset = tzoffset + 86400 end
 
     -- Seconds till midnight
-    local stm = (((24 - h) * 3600) + ((60 - m) * 60)) / 4.1
+    --local stm = (((24 - h) * 3600) + ((60 - m) * 60)) / 4.1
+
+    local stm = (((24 - h) * 3600) - ((60 - m) * 60)) / 4.1
 
     -- Seconds till 10 pm
-    local sttpm = (((22 - h) * 3600) + ((60 - m) * 60)) / 4.1
+    local sttpm = (((22 - h) * 3600) - ((60 - m) * 60)) / 4.1
 
     -- midnight timestamp
     local mts = GetTimeStamp() + tzoffset + stm

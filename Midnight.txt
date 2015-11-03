@@ -1,6 +1,6 @@
 ## Title: Midnight
-## APIVersion: 100011
-## Version: 0.3
+## APIVersion: 100013
+## Version: 0.5
 ## DependsOn: Clock
 ## Author: kerb9729 (@gardhull gard@bitwizardry.com)
 
